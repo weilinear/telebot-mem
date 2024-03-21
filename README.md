@@ -2,6 +2,11 @@
 Telebot with memory extension. It supports add a database backend to save chat histories.
 
 ## Quick start
+Install from Pypi or from source
+### [PyPi](https://pypi.org/project/telebot-mem/)
+```bash
+python3 -m pip install telebot-mem
+```
 start a docker instance of mongo for quick experimentation
 ```bash
 mkdir -p local/db
