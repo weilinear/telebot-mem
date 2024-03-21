@@ -1,5 +1,6 @@
 import logging
 
+
 # Abstract class for MemDB with different Backend
 class MemDB:
     def __init__(self, *args, **kwargs):

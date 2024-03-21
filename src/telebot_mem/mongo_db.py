@@ -5,6 +5,7 @@ from telebot_mem.db import MemDB
 from pymongo import MongoClient
 from telebot.types import Message
 
+
 class MongoMem(MemDB):
     def __init__(self, connecion_string, db_name):
         self.client = MongoClient(connecion_string)[db_name]
@@ -17,7 +18,7 @@ class MongoMem(MemDB):
 
     def get_message(self, message_id):
         return self.client.messages.find_one({"_id": message_id})
-    
+
     def get_last_message(self):
         return self.client.messages.find_one(sort=[("_id", -1)])
 
