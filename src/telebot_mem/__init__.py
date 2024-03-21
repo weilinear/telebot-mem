@@ -11,3 +11,4 @@ def de_json(json_string):
     return message
 types.Message.de_json = de_json
 
+from .mongo_db import MongoMem
